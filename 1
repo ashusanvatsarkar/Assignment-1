@@ -1,0 +1,23 @@
+
+for i in {1..5}
+do
+  a=$(date)
+
+  echo "Enter the name of employee $i:"
+  read name 
+
+  echo "Enter the age of employee $i:"
+  read age
+
+  echo "Enter the address of employee $i:"
+  read address
+
+  echo "$name, $age, $address"
+
+  mkdir $name
+  cd $name
+  touch $name
+  echo "$name, $age, $address, $a" >> "${name}"
+  cd ..
+
+done
