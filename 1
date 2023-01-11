@@ -3,16 +3,14 @@ for i in {1..5}
 do
   a=$(date)
 
-  echo "Enter the name of employee $i:"
+  echo "name: $i"
   read name 
 
-  echo "Enter the age of employee $i:"
+  echo "age: $i"
   read age
 
-  echo "Enter the address of employee $i:"
+  echo "address: $i"
   read address
-
-  echo "$name, $age, $address"
 
   mkdir $name
   cd $name
